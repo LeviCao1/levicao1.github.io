@@ -1,0 +1,688 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>Vocabulary</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	padding-inline-start: 0;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.page-description {
+    margin-bottom: 2em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.highlight-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.highlight-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.highlight-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.highlight-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.highlight-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.highlight-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.highlight-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.highlight-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.highlight-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.highlight-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.highlight-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.highlight-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.highlight-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.highlight-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.block-color-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.block-color-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.block-color-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.block-color-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.block-color-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.block-color-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.block-color-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.block-color-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.block-color-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.block-color-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.block-color-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.block-color-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.select-value-color-interactiveBlue { background-color: rgba(35, 131, 226, .07); }
+.select-value-color-pink { background-color: rgba(245, 224, 233, 1); }
+.select-value-color-purple { background-color: rgba(232, 222, 238, 1); }
+.select-value-color-green { background-color: rgba(219, 237, 219, 1); }
+.select-value-color-gray { background-color: rgba(227, 226, 224, 1); }
+.select-value-color-translucentGray { background-color: rgba(255, 255, 255, 0.0375); }
+.select-value-color-orange { background-color: rgba(250, 222, 201, 1); }
+.select-value-color-brown { background-color: rgba(238, 224, 218, 1); }
+.select-value-color-red { background-color: rgba(255, 226, 221, 1); }
+.select-value-color-yellow { background-color: rgba(253, 236, 200, 1); }
+.select-value-color-blue { background-color: rgba(211, 229, 239, 1); }
+.select-value-color-pageGlass { background-color: undefined; }
+.select-value-color-washGlass { background-color: undefined; }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="7cfee701-987e-4244-a7a9-bdfe6779ec88" class="page sans"><header><img class="page-cover-image" src="https://www.notion.so/images/page-cover/woodcuts_1.jpg" style="object-position:center 66.21000000000001%"/><div class="page-header-icon page-header-icon-with-cover"><span class="icon">😜</span></div><h1 class="page-title">Vocabulary</h1><p class="page-description"></p></header><div class="page-body"><p id="baae55ae-3aa8-4dd5-8e65-0c952f8b297d" class="block-color-pink_background">
+</p><ul id="d6c0ad64-6106-491a-987f-a7d8f1342def" class="block-color-pink_background bulleted-list"><li style="list-style-type:disc">have the facility-有能力（做）Yes. If we don&#x27;t have the facilities to deal with it here, we send it out for maintenance.</li></ul><ul id="6a1bbeb9-0c5f-4ca5-b913-aa4fe34a9a4b" class="block-color-pink_background bulleted-list"><li style="list-style-type:disc">incorporate-将…包括在内，组成公司-Paints incorporate with oil.</li></ul><ul id="b9df93c8-9444-4b88-acd2-2f189f454685" class="block-color-pink_background bulleted-list"><li style="list-style-type:disc">expand-扩张，发展The shipbuilding industry is rapidly expanding.</li></ul><ul id="468ef031-9d08-4022-b234-764f5ded7ca7" class="block-color-pink_background bulleted-list"><li style="list-style-type:disc">curriculum-总课程-The school&#x27;s curriculum is changing.</li></ul><ul id="b6327476-6f3d-4e60-9ab3-9622f4edccb1" class="block-color-pink_background bulleted-list"><li style="list-style-type:disc">recruiter-招聘人员-The tele recruiter is prompted by a variety of questions, depending on your answers.</li></ul><p id="f9cdf1a9-5697-4bbd-869c-75dd85ba9266" class="block-color-pink_background">
+</p><ul id="ef6bb9ab-2c5f-4390-8323-213a81107822" class="block-color-pink_background bulleted-list"><li style="list-style-type:disc">connection熟人-The debater&#x27;s argument failed of logical connection</li></ul><ul id="a748bf33-cd7c-40e0-9b6b-264f4ade8719" class="block-color-pink_background bulleted-list"><li style="list-style-type:disc">interact相互作用-He interacted closely with us so as to finish the difficult task.</li></ul><ul id="2c104eaf-a7e6-4653-a9bd-b3f72069d8f1" class="block-color-pink_background bulleted-list"><li style="list-style-type:disc">blended-learning-混合学习There is no doubt that <strong>blended learning</strong> can be as effective and often more effective than a classroom</li></ul><ul id="1365f270-bfc2-4265-a57a-eb3db148a999" class="block-color-pink_background bulleted-list"><li style="list-style-type:disc">Pen-Pal-笔友This letter is from your Australian <strong>pen pal</strong>.</li></ul><ul id="d07cc795-3ef7-4887-a2a1-faa4b6013642" class="block-color-pink_background bulleted-list"><li style="list-style-type:disc">Origami-折纸手工-I quit my job to try to make a career out of origami.</li></ul><ul id="28adfe0e-77b2-4561-9b96-1428a05ed7ae" class="block-color-pink_background bulleted-list"><li style="list-style-type:disc"></li></ul><ul id="1279dd2f-e2cc-4727-8eaf-65948ec30d8a" class="block-color-pink_background bulleted-list"><li style="list-style-type:disc">  turned into-转变，变成 Our dream holiday <strong>turned into</strong> a nightmare.</li></ul><ul id="d89d52fd-b9ec-45a2-a7a8-89cc4bc16d8b" class="block-color-pink_background bulleted-list"><li style="list-style-type:disc">Charitable organization 慈善组织The <strong>charitable organization</strong> decided to construct a new house in Valadares.</li></ul><ul id="f73ecc04-9132-43b7-9df9-3604321a1155" class="block-color-pink_background bulleted-list"><li style="list-style-type:disc">donated 捐赠的The businessman donated a lot of money to the hospital.</li></ul><ul id="4f787d1a-d7be-409c-8ab8-9ac31fadf881" class="block-color-pink_background bulleted-list"><li style="list-style-type:disc">aim 目标The advertising campaign is aimed primarily at young people.</li></ul><ul id="29c9eef0-2922-4a36-9e3e-7f9dd5ddccbc" class="block-color-pink_background bulleted-list"><li style="list-style-type:disc">experiment实验 His argument does not rest on reasoning or on experiment, but on authority.</li></ul><ul id="4fe19e76-b0ba-4127-82cd-b5bd0a424762" class="block-color-pink_background bulleted-list"><li style="list-style-type:disc">toiletries化妆品，洗漱包-&quot; That&#x27;s a toiletry bag. You put a toothbrush in there. Uh-huh.”</li></ul><ul id="575ca0c4-fa21-4ca5-bb64-89424f8de77c" class="block-color-pink_background bulleted-list"><li style="list-style-type:disc">Inflatable mattress充气垫-An air mattress is an <a href="http://eusoft_cef/Inflatable.html">inflatable</a> <a href="http://eusoft_cef/Mattress.html">mattress</a>/<a href="http://eusoft_cef/Sleeping_pad.html">sleeping pad</a>.</li></ul><ul id="7ec05ded-e2d7-4060-8043-6516c2ce0c53" class="block-color-pink_background bulleted-list"><li style="list-style-type:disc">Laundry service洗衣服务-The hotel has a <strong>laundry service</strong>.</li></ul><ul id="182bdbe5-0b51-48e8-b1e2-6effda618d54" class="block-color-pink_background bulleted-list"><li style="list-style-type:disc">sponsors赞助商-Any word from her big sponsors today?</li></ul><ul id="3dfbed1a-e1ce-4663-a90b-a3bb5d4a4309" class="block-color-pink_background bulleted-list"><li style="list-style-type:disc">vacant空的-He is all vacant upstairs.</li></ul><ul id="03b3f6c0-9b72-4dbd-b437-a112c7c1c44c" class="block-color-pink_background bulleted-list"><li style="list-style-type:disc"></li></ul><ul id="d7309277-0a50-4096-975b-3ec05754fdfc" class="block-color-pink_background bulleted-list"><li style="list-style-type:disc">reputation名气</li></ul><ul id="3e4f1f98-c867-423a-a776-bde04b9d1b92" class="block-color-pink_background bulleted-list"><li style="list-style-type:disc">Work ethic职业道德</li></ul><ul id="6fb7a31d-fe90-445c-9262-3e48b298ae33" class="block-color-pink_background bulleted-list"><li style="list-style-type:disc">candidate报考者</li></ul><ul id="89af13f4-e539-4df3-bdd3-b7e566a9bac1" class="block-color-pink_background bulleted-list"><li style="list-style-type:disc">settle down定居，专心于</li></ul><ul id="5206c656-528d-4d7f-bba9-c7baa83674ec" class="block-color-pink_background bulleted-list"><li style="list-style-type:disc">recruiters招聘人员</li></ul><ul id="4eecce82-ff1e-493d-8472-5d0c06270385" class="block-color-pink_background bulleted-list"><li style="list-style-type:disc">cram为了考试而抱佛脚</li></ul><ul id="c98034ae-5723-45b6-844e-5128c010ff7e" class="block-color-pink_background bulleted-list"><li style="list-style-type:disc">launch into开始着手，迅速做某事</li></ul><ul id="3205b5df-7d49-4f17-892f-1b12b9465cf7" class="block-color-pink_background bulleted-list"><li style="list-style-type:disc">reduce fonts减小字体？缩减开支？偷工减料？</li></ul><ul id="0a6c98bf-9569-4514-a376-23b115686285" class="block-color-pink_background bulleted-list"><li style="list-style-type:disc">Margin size边距大小</li></ul><ul id="3fce0f05-b5b6-44f7-955c-5d8dbe97c013" class="block-color-pink_background bulleted-list"><li style="list-style-type:disc">proofread校对</li></ul><p id="6612cf8b-4bae-424d-861e-44d6f733c5f3" class="">
+</p><p id="b992dea2-d9c0-480c-8580-32868d45ea0f" class="">
+</p><ul id="50103a94-2960-4aef-bfb2-2df0bd792948" class="bulleted-list"><li style="list-style-type:disc">Prospective预期的，可能的</li></ul><p id="ba7da1af-a463-48cc-82c8-cfac5cb3e7fb" class="">
+</p><ul id="ee0a9799-b102-4ec0-8421-ea24b7131eb5" class="bulleted-list"><li style="list-style-type:disc">Invaluable无法估计的，非常宝贵的</li></ul><p id="26bbcf11-58f4-44d8-b6b2-e9d3d013a93c" class="">Interviewer</p><p id="570cffb9-1e83-4b7a-a7cb-f7e9c2a979e0" class="">commonly</p><p id="710b3067-d884-44db-bd22-df5ad99c1651" class="">advertising ﬂyer-广告传单</p><p id="3fc8a048-4176-46eb-b4c5-02b2f84eef4b" class="">market</p><p id="76480c0b-db76-48ce-8e12-25a114f9321a" class="">document</p><p id="fc896b94-fd45-466d-ac4a-f03c91cc4edb" class="">catch one’s attention引起某人的注意</p><p id="ba376097-78e7-441f-8419-70dc2ecf91e6" class="">employer</p><p id="5285edc1-aca6-4502-ba5b-fcb22f32f5df" class="">invite</p><p id="6db33ab9-4101-4ced-83f9-069f11a32d98" class="">job-seekers求职者</p><p id="dc4c170a-5448-423f-9588-e15639d9c07d" class="">recognised承认，认出，辨别出</p><p id="453f8d9a-c891-49de-8038-5336dfb60ecc" class="">Focus on</p><p id="4ffbfb53-8f68-4fc9-ac89-78cefab44566" class="">achieved</p><p id="ce26bd2d-51fb-420d-ae3f-475687c10aac" class="">effectiveness</p><p id="b3a3e621-d8a8-4929-94b3-287c4fad56a5" class="">launch straight into直接发射到</p><p id="86866910-838e-4046-9e08-2aa8e40efba3" class="">educational background</p><p id="02eb0d6c-0482-4fce-9bfd-b8533cb04bce" class="">ineffective无效的</p><p id="e3e97847-1728-44bf-b191-b4a9ebe78e92" class="">particularly</p><p id="1093c611-7621-4679-a41d-724a90c0f859" class="">Recruiter</p><p id="9e3d0171-8e5d-4e5c-bc5e-88b3228850f5" class="">Impressed印象深刻的，感动的</p><p id="abe06484-458d-4dd8-9085-05e7891acaa9" class="">relevant work experience</p><p id="66ea08b3-ce7c-48d1-891d-33415ed877be" class="">candidates</p><p id="e79d5680-3339-4e09-8889-d48909dba21c" class="">work ethic</p><p id="3d0e447a-37e8-4ee4-abc6-839812cf88e7" class="">relevant degrees-相关程度</p><p id="1b6a5c98-34d2-4749-a712-60623d4ccf2a" class="">factors</p><p id="c07f6952-75f6-4f58-bf52-c7a1e3683a6b" class="">Video Conferencing视频会议</p><p id="8f3f43e9-a5fa-400f-83fe-b19d4d055913" class="">primary school students</p><p id="b6390669-9015-43f6-a12b-07027e89bae0" class="">interact with each other彼此互动</p><p id="36581f9d-3b28-4190-acc3-2a7fcd3e2186" class="">global community</p><p id="7d4bce4d-d549-4caa-948c-fbb37fe0a957" class="">enrich the curriculum丰富课程</p><p id="d9fdbda3-13c8-49fe-bf6f-63114138e082" class="">achieve learning outcomes实现学习成果</p><p id="37f933bd-6975-4054-9421-dcdcd5643649" class="">endless无止境的，漫无目的的</p><p id="f216905b-3f25-4bbe-abf7-385da7c82556" class="">incorporate technology into …将技术融入</p><p id="22f0abec-4de9-4a97-9c0f-46b011c2e469" class="">blended learning</p><p id="9bed9b46-fa3a-4aa1-9452-b4f04f012e9d" class="">pen-pal system</p><p id="b74fd10d-332b-4e51-b924-f08e1bab43a7" class="">rural郊区的</p><p id="a3d48d4c-db93-45bb-a027-a2c3fc3e24e5" class="">connection</p><p id="fa4f79ea-ee4e-42d7-ae97-bf115e883901" class="">virtual实质上的，虚拟的</p><p id="662acefb-6dad-4856-9fef-f9786d735efa" class="">ﬁeld trips实地考察</p><p id="816255e6-6808-40b1-aa9e-b7a78a9fbeb3" class="">take great advantage of发挥///的巨大优势</p><p id="53f01765-dc28-42c1-8178-f63fb2918e21" class="">facility for individual个人才能</p><p id="3ec1ba62-5abb-433e-bcb6-93c05675a05d" class="">expand their horizons拓展视野</p><p id="8e7ccde7-1c36-43e5-85da-053ae1b07b56" class="">Shelter庇护所</p><p id="9ebed156-bfbe-43eb-94bd-dd0c10f8840f" class="">vacant</p><p id="855cbcd3-31a4-4603-b025-b4cc16e5f568" class="">inflatable mattresses</p><p id="0f6282dc-0f8f-48e6-8f54-7381f454f2df" class="">charitable organisations</p><p id="ac54c40d-5543-42c7-9785-4f947261338e" class="">dentists</p><p id="9ac275d4-6a39-4101-8a18-38ed05e6ebe9" class="">donated</p><p id="8b34fdc1-569a-44b9-859a-acd7f29a7382" class="">delighted喜欢的，高兴的</p><p id="c72b885d-91ec-4625-b909-f78fdd503297" class="">expand</p><p id="c7129aec-e2df-447d-a8de-e3c2357c6b22" class="">commercial sponsors商业赞助商</p><p id="4e685121-c64a-49d1-8ee1-222fdfaadbf0" class="">financial support</p><p id="066ef922-a518-49c3-bd24-172f586bcf4b" class="">
+</p><figure id="a25c7f7c-134b-4d5f-aeab-c5d0fef7bb09"><div class="source"><a href="Vocabulary%207cfee701987e4244a7a9bdfe6779ec88/Vocabulary.pdf">https://s3-us-west-2.amazonaws.com/secure.notion-static.com/dc338bef-d236-48a9-8d78-0d7868836408/Vocabulary.pdf</a></div></figure><p id="569104dd-a19a-41cc-810e-644647f921e5" class="">clarification阐明</p><p id="ef76837b-d37d-4ab2-81fc-ea30796856aa" class="">prioritize把…区分优先次序</p><p id="7e9d49d5-4d6a-46c5-ab74-c45243a5ab3b" class="">compelling有说服力的</p><p id="fa20a1b1-8d04-427e-b01e-3b13dcc59840" class="">delivery讲话方式</p><p id="002f6a8b-badd-409e-af1e-3338cd63641c" class="">upon依据</p><p id="d750fc1b-55ea-48a2-b271-7137720c33c5" class="">pacing节奏</p><p id="3184b7cf-cc8d-46f9-b22a-cf47d4b8709a" class="">foster</p><p id="4d49b930-18a2-4d7e-ba74-900ee9b24d4c" class="">innovation创新思路</p><p id="8a7cbcb7-9922-46fd-91b9-31a4954211a5" class="">counterargument辩论</p><figure id="cb427f1c-f0ab-4a0e-881e-a12c97cc5561"><div class="source"><a href="https://www.notion-widgets.com/embed/6470bb0b5d65b0e27dc47fbe">https://www.notion-widgets.com/embed/6470bb0b5d65b0e27dc47fbe</a></div></figure><p id="5077d88a-8407-4d16-8e96-e88066312286" class="">Too few employers will offer real <strong>apprenticeships</strong> to the young.</p><p id="64a51e57-ab63-4c11-b65e-f27cffa47dbc" class="">My school <strong>career is </strong> very impressive.</p><p id="8f25605f-9f4b-4c56-b5b0-f5bb91284821" class="">&#x27;m hoping to do a chemistry <strong>degree</strong>.</p><p id="cb9c0871-e8e3-49de-be51-dd869372a86d" class="">A university degree has become a requisite for entry into most professions</p><p id="beb701b7-9205-4ae6-a627-693c1b7f1b08" class="">Ardent supporters of public <strong>higher education</strong> admit the importance of private higher education.</p><p id="87d0bc8d-e640-43ff-b613-5d07e04e6b21" class="">
+</p><p id="1ae5db4c-fdf9-4572-8fd4-d18532129f27" class="">Some of the <strong>millennial generation </strong>are dissatisfied with the old ways of doing things, for example how big business uses data from social media, and the negative impact of companies on society and the environment.</p><p id="aadbcafa-cc49-46ac-a971-1f0404844336" class="">
+</p><p id="2ccd566d-18da-45ee-a08a-3aef7a25bab4" class="">The country provided a <strong>pension </strong>to the old person.</p><p id="32f47f0c-fff5-4110-9a40-f54def11ba5a" class="">
+</p><p id="a20e8c1b-e108-4bfa-a6de-8e7d6068935b" class="">The country is now enjoying a period of relative <strong>stability </strong>and prosperity.</p><p id="2efad773-74fb-4d93-9477-869011dbbbbf" class="">
+</p><p id="41319ec2-9149-4f21-9784-eb3de1b04be2" class="">
+</p><p id="1755e7b0-a0b3-40ac-b679-dd6579c73ea6" class=""><strong>Unemployment </strong>continued its remorseless rise because of the pandemic</p><p id="0fc044a3-cc83-412b-92a5-5bd032226ec8" class="">These safety standards apply to all <strong>workplaces</strong>.</p><p id="6f2c7865-a408-486b-9c15-2274fb70b0c8" class="">
+</p></div></article></body></html>
